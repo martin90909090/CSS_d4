@@ -28,9 +28,24 @@ body {
       grid-area: navbar;
       height: 100%;
       background-image:url(../img/navbar_bg.jpg);
-      text-align: center;
+      display: flex;
+      flex-direction: row;
       color: white;
       font-size: 30px;
+      div{
+        display: flex;
+        img{
+            height: 250px;
+            justify-content: left;
+            flex-direction: column;
+          }
+          h1{
+            justify-content: left;
+            margin-top: 100px;
+            margin-left: 80px;
+            flex-direction: column;
+          }
+      }
       &:hover{
         + .menu{
           @media (max-width: 480px) { //BOOTSTRAP BREAKPOINTS SON DEL DESAFIO 3
@@ -44,7 +59,7 @@ body {
       grid-area: menu;
       height: 100%;
       font-size: 26px;
-      background-color: lightseagreen;
+      background-color: red;
       @media (max-width: 480px) {
         display: none;
         position: fixed;
@@ -100,7 +115,7 @@ body {
       text-align: center;
       justify-content: center;
       font-size: 26px;
-      background-color: palevioletred;
+      background-color: blue;
       transform: translateZ(45deg);
       animation-name: animation-test;
       animation-duration: 6000ms;
