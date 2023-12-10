@@ -9,6 +9,7 @@ body {
 .container-grid {
   width: 100%;
   background-color: black;
+  height: 100vh;
   display: grid;
   grid-template-areas: "navbar navbar navbar" "menu products products" "footer footer footer";
   grid-template-columns: repeat(3, 1fr);
@@ -22,15 +23,11 @@ body {
 }
 .container-grid .navbar {
   grid-area: navbar;
-  height: 50px;
-  background-color: greenyellow;
+  height: 100%;
+  background-image: url(../img/navbar_bg.jpg);
   text-align: center;
-}
-.container-grid .navbar form {
-  background-color: greenyellow;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+  color: white;
+  font-size: 30px;
 }
 @media (max-width: 480px) {
   .container-grid .navbar:hover + .menu {
@@ -95,7 +92,7 @@ body {
 }
 .container-grid .footer {
   grid-area: footer;
-  height: 70px;
+  height: 100%;
   background-color: palevioletred;
   transform: translateZ(45deg);
   animation-name: animation-test;
