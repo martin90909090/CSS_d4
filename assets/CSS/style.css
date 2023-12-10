@@ -37,7 +37,8 @@ body {
 .container-grid .menu {
   grid-area: menu;
   height: 100%;
-  background-color: aquamarine;
+  font-size: 26px;
+  background-color: lightseagreen;
 }
 @media (max-width: 480px) {
   .container-grid .menu {
@@ -50,6 +51,7 @@ body {
   }
 }
 .container-grid .menu li {
+  background-color: blanchedalmond;
   list-style-type: none;
 }
 .container-grid .products {
@@ -93,6 +95,9 @@ body {
 .container-grid .footer {
   grid-area: footer;
   height: 100%;
+  text-align: center;
+  justify-content: center;
+  font-size: 26px;
   background-color: palevioletred;
   transform: translateZ(45deg);
   animation-name: animation-test;
@@ -119,4 +124,14 @@ body {
     background-color: yellow;
     transform: rotateZ(45deg);
   }
+}
+.container-grid .footer div {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1%;
+}
+.container-grid .footer div img {
+  height: 50px;
 }/*# sourceMappingURL=style.css.map */
