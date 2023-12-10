@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-grid {
+  width: 100%;
+  background-color: black;
+  display: grid;
+  grid-template-areas: "navbar navbar navbar" "menu products products" "footer footer footer";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 10px;
+}
+@media (max-width: 480px) {
+  .container-grid {
+    grid-template-areas: "navbar navbar navbar" "products products products" "footer footer footer";
+  }
+}
+.container-grid .navbar {
+  grid-area: navbar;
+  height: 50px;
+  background-color: greenyellow;
+  text-align: center;
+}
+.container-grid .navbar form {
+  background-color: greenyellow;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+@media (max-width: 480px) {
+  .container-grid .navbar:hover + .menu {
+    display: block;
+  }
+}
+.container-grid .menu {
+  grid-area: menu;
+  height: 100%;
+  background-color: aquamarine;
+}
+@media (max-width: 480px) {
+  .container-grid .menu {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    width: 100vw;
+    height: 100px;
+  }
+}
+.container-grid .menu li {
+  list-style-type: none;
+}
+.container-grid .products {
+  grid-area: products;
+  background-color: chocolate;
+  height: 100%;
+}
+.container-grid .products .product-container {
+  background-color: azure;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+@media (max-width: 480px) {
+  .container-grid .products .product-container {
+    justify-content: center;
+  }
+}
+.container-grid .products .product-container .product {
+  width: 30%;
+  height: 200px;
+  background-color: white;
+  margin: 10px;
+  transition: all 500ms ease-out;
+}
+.container-grid .products .product-container .product:hover {
+  margin-top: 100px;
+}
+@media (max-width: 480px) {
+  .container-grid .products .product-container .product {
+    width: 45%;
+  }
+}
+.container-grid .products .product-container .product img {
+  width: 100%;
+  height: 80%;
+}
+.container-grid .footer {
+  grid-area: footer;
+  height: 70px;
+  background-color: palevioletred;
+  transform: translateZ(45deg);
+  animation-name: animation-test;
+  animation-duration: 6000ms;
+}
+@keyframes animation-test {
+  0% {
+    background-color: yellow;
+    transform: rotateZ(45deg);
+  }
+  25% {
+    background-color: orange;
+    transform: rotateZ(90deg);
+  }
+  50% {
+    background-color: green;
+    transform: rotateZ(120deg);
+  }
+  75% {
+    background-color: skyblue;
+    transform: rotateZ(-90deg);
+  }
+  100% {
+    background-color: yellow;
+    transform: rotateZ(45deg);
+  }
+}/*# sourceMappingURL=style.css.map */
