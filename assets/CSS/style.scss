@@ -60,9 +60,7 @@ body{
   .aside_bar{
     display: flex;
     flex-direction: column;
-    //overflow: auto;
     width: 30vw;
-    //position: fixed;
   }
   .courses{
     display: flex;
@@ -72,7 +70,7 @@ body{
     justify-content: space-around;
     align-items: center;
     background-color: green;
-    height: 40vh;
+    height: 60vh;
     width: 100%;
     .course{
       display: flex;
