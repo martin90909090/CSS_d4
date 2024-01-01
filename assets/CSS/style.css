@@ -8,6 +8,7 @@ body {
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .menu_bar {
@@ -15,6 +16,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   background-color: blue;
 }
 .menu_bar .logo img {
@@ -41,17 +43,30 @@ body {
   color: white;
 }
 
-.courses {
+.container {
   display: flex;
   flex-direction: row;
-  flex: 2 0;
+  flex: 1 0;
+  justify-content: space-between;
+  width: 100%;
+}
+.container .aside_bar {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+.container .courses {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   background-color: green;
   height: 40vh;
+  width: 100%;
 }
-.courses .course {
+.container .courses .course {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -61,15 +76,15 @@ body {
   background-color: yellow;
   margin: 15px;
 }
-.courses .course img {
+.container .courses .course img {
   width: 100%;
-  height: 65%;
+  height: 100px;
   padding: 0;
 }
-.courses .course h2 {
+.container .courses .course h2 {
   font-size: 28px;
 }
-.courses .course .btn {
+.container .courses .course .btn {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -77,7 +92,10 @@ body {
   text-align: center;
   height: 50%;
 }
-.courses .course .btn button {
-  margin: 5px;
+.container .courses .course .btn button {
+  margin: 2px;
   padding: 5px;
+  width: 150px;
+  height: 20px;
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */
