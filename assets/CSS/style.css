@@ -6,6 +6,8 @@
 
 body {
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu_bar {
@@ -42,18 +44,40 @@ body {
 .courses {
   display: flex;
   flex-direction: row;
+  flex: 2 0;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   background-color: green;
+  height: 40vh;
 }
-.courses article {
-  width: 200px;
-  height: 150px;
+.courses .course {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: center;
+  width: 250px;
+  height: 180px;
   background-color: yellow;
-  margin: 10px;
+  margin: 15px;
 }
-.courses article img {
+.courses .course img {
   width: 100%;
   height: 65%;
+  padding: 0;
+}
+.courses .course h2 {
+  font-size: 28px;
+}
+.courses .course .btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50%;
+}
+.courses .course .btn button {
+  margin: 5px;
+  padding: 5px;
 }/*# sourceMappingURL=style.css.map */
