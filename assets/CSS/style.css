@@ -45,6 +45,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  min-height: 100vh;
 }
 
 .menu_bar {
@@ -83,9 +84,10 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  flex: 1 0;
+  flex: 1 0 auto;
   justify-content: space-between;
   width: 100%;
+  height: 100%;
 }
 .container .aside_bar {
   display: flex;
@@ -170,7 +172,12 @@ body {
 .container .ch_container .banner {
   position: relative;
   z-index: -1;
-  background-image: url("../img/bg_image.jpg");
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../img/bg_image_1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -178,4 +185,32 @@ body {
 }
 .container .ch_container .banner:hover {
   animation: zoom-in 10s forwards;
+}
+.container .ch_container .banner h1 {
+  font-size: 50px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+}
+.footer .logo img {
+  width: 100px;
+  height: 100px;
+}
+.footer .social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer .contact {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
