@@ -176,7 +176,7 @@ body{
       justify-content: center;
       align-items: center;
       text-align: center;
-      background-image: url('../img/bg_image_1.jpg');
+      background-image: url('../img/bg_image');
       background-size: cover;
       background-repeat: no-repeat; 
       height: 100%;
@@ -200,6 +200,14 @@ body{
   flex: 1 0;
   justify-content: center;
   align-items: center;
+  background-image: url('../img/bg_image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  height: 100%;
+  transition: transform 10s ease-in-out;
+  &:hover {
+    animation: zoom-in 10s forwards;
+  }
   .logo{
     img{
       width: 100px;
@@ -210,11 +218,29 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    li{
+      a{
+        img{
+          width: 50px;
+          height: 50px;
+          margin: 20px;
+        }
+      }
+    }
   }
   .contact{
     display: flex;
     flex-direction: row;
     margin-top: 20px;
     margin-bottom: 20px;
+    li{
+      list-style: none;
+      a{
+        color: white;
+        font-size: 16px;
+        font-family: 'montserrat', sans-serif;
+        margin: 20px;
+      }
+    }
   }
 }
