@@ -51,6 +51,7 @@ body {
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .menu_bar {
@@ -185,7 +186,6 @@ body {
   flex-shrink: 0;
   flex: 1 0;
   z-index: 0;
-  overflow: hidden;
   justify-content: center;
   align-items: center;
   background-image: url("../img/bg_image.jpg");
