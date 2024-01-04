@@ -42,7 +42,6 @@
 * {
   margin: 0;
   padding: 0;
-  border: solid red 1px;
 }
 
 body {
@@ -52,6 +51,7 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
+  background-color: black;
 }
 
 .menu_bar {
@@ -60,7 +60,8 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: blue;
+  background-color: #273746;
+  border-radius: 5px;
 }
 .menu_bar .logo {
   margin-left: 10px;
@@ -73,6 +74,18 @@ body {
 .menu_bar .search input {
   width: 300px;
   height: 30px;
+  border-radius: 50px;
+  font-family: "roboto", sans-serif;
+  color: black;
+  text-align: center;
+}
+.menu_bar .search button {
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: white;
+  font-family: "roboto", sans-serif;
+  color: black;
 }
 .menu_bar .menu ul {
   display: flex;
@@ -103,17 +116,29 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: left;
+  justify-content: flex-start;
   width: 15vw;
-  padding: 15px;
+  margin: 0;
+  background-color: #17202A;
+  border-radius: 15px;
 }
 .container .aside_bar .categories {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin: 15px;
 }
-.container .aside_bar .categories ul {
+.container .aside_bar .categories h3 {
+  font-size: 25px;
+  color: white;
+  margin: 10px;
+}
+.container .aside_bar .categories ul li {
+  color: white;
   list-style: none;
+  margin: 5px;
 }
 .container .aside_bar .categories ul li:hover {
   animation: vibrate 0.2s linear infinite;
@@ -123,9 +148,20 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin: 15px;
+}
+.container .aside_bar .filter h3 {
+  font-size: 25px;
+  color: white;
+  margin: 10px;
 }
 .container .aside_bar .filter ul {
+  color: white;
   list-style: none;
+  margin: 5px;
+}
+.container .aside_bar .filter ul li {
+  margin: 5px;
 }
 .container .aside_bar .filter ul li:hover {
   animation: vibrate 0.2s linear infinite;
@@ -137,7 +173,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: green;
+  background-color: black;
   height: 100%;
   width: 100%;
 }
@@ -148,8 +184,9 @@ body {
   text-align: center;
   width: 250px;
   height: 180px;
-  background-color: yellow;
+  background-color: #ADD8E6;
   margin: 15px;
+  border-radius: 17px;
   transition: transform 0.5s ease-in-out;
   transform: scale(1);
 }
@@ -160,9 +197,14 @@ body {
   width: 100%;
   height: 100px;
   padding: 0;
+  border-radius: 15px;
 }
 .container .ch_container .courses .course h2 {
   font-size: 28px;
+  font-family: "roboto", sans-serif;
+  font-size: 30px;
+  color: black;
+  margin: 8px;
 }
 .container .ch_container .courses .course .btn {
   display: flex;
@@ -170,14 +212,18 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 50%;
+  height: 100%;
 }
 .container .ch_container .courses .course .btn button {
-  margin: 2px;
-  padding: 5px;
+  margin: 0;
   width: 150px;
   height: 20px;
+  font-family: "roboto", sans-serif;
   font-size: 15px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  background-color: #17202A;
 }
 
 .footer {
@@ -198,8 +244,8 @@ body {
   animation: zoom-in 10s forwards, limit-size 10s forwards;
 }
 .footer .logo img {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 .footer .social {
   display: flex;
@@ -224,5 +270,6 @@ body {
   color: white;
   font-size: 16px;
   font-family: "montserrat", sans-serif;
+  text-decoration: none;
   margin: 20px;
 }/*# sourceMappingURL=style.css.map */
