@@ -91,6 +91,8 @@ body{
         a{
           text-decoration: none;
           color: white;
+          font-family: 'roboto', sans-serif;
+          font-size: 20px;
         }
       }
     }
@@ -218,6 +220,11 @@ body{
             border-radius: 5px;
             border: none;
             background-color: #17202A;
+            transition: transform 0.5s ease-in-out;
+            transform: scale(1);
+            &:hover {
+            transform: scale(1.1);
+            }
           }
         }
       }
